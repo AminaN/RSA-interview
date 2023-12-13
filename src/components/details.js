@@ -37,7 +37,9 @@ const Details = ({ quote, selectedAddons }) => {
       <div className="details-price">
         <div className="price-center">
         <h1>£{calculateTotalPrice().toFixed(2)}</h1>
-        <p>{isAnnual ? 'Per Year' : 'Per Month'}</p>
+        <h3>{isAnnual ? 'Per Year' : 'Per Month'}</h3>
+        <p>This price includes Insurance Premium Tax at the
+           current rate. No charge for paying monthly.</p>
         <button onClick={handleSwitch} aria-label={`Switch to ${isAnnual ? 'Monthly' : 'Annual'}`}>
         Switch to {isAnnual ? 'Monthly' : 'Annual'}
         </button>
