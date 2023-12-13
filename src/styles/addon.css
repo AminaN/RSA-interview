@@ -1,0 +1,62 @@
+.addon-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.addon-item {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.addon-item:hover {
+
+  border: 3px solid  #5c1380;
+
+}
+
+@media (min-width: 768px) {
+  /* Adjust styles for larger screens */
+  .addon-item {
+       width: calc(50% - 40px);
+       margin-right: 20px;
+       margin-left: 20px;
+  }
+}
+
+.addon-info-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: flex-start;
+}
+.addon-info-button {
+    display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   margin-bottom: 10px;
+
+}
+.addon-info-button button {
+  margin-left: 10px;
+      padding: 10px;
+      width: 25%;
+      background-color: white;
+      border: 2px solid #5c1380;
+      color: #5c1380;
+      border-radius: 5px;
+}
+
+.addon-info-button button:hover {
+  border: 3px solid #5c1380;
+}
+
+.addon-title{
+    margin-left: 20px;
+}
